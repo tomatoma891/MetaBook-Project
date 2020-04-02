@@ -1,0 +1,36 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "just some stuff",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwright489/Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwright489/Project2/issues"
+  },
+  "homepage": "https://github.com/cwright489/Project2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "hbs": "^4.1.0",
+    "jquery": "^3.4.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2",
+    "sequelize": "^5.21.5"
+  }
+}
