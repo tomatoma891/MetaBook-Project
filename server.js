@@ -4,6 +4,7 @@ var bodyParser = require("body-parser");
 var session = require("express-session");
 var passport = require("./config/passport");
 var hbs = require("hbs");
+var connection = require("./connection.js");
 var sdkClient = require('./api_SDK/astro-api-nodejs-client-master/sdk/sdk');
 // Setting up port
 var PORT = process.env.PORT || 8080;
