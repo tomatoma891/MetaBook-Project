@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var session = require("express-session");
 var passport = require("./config/passport");
 var hbs = require("hbs");
-var connection = require("./connection.js");
+var mysql = require("mysql");
 var sdkClient = require('./api_SDK/astro-api-nodejs-client-master/sdk/sdk');
 // Setting up port
 var PORT = process.env.PORT || 8080;
@@ -247,6 +247,11 @@ app.get("/:sign", (req, res) => {
 //
 //this will listen to and show all activities on our terminal to 
 //let us know what is happening in our app
+
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+
 db.sequelize.sync().then(function () {
   app.listen(PORT, function () {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
