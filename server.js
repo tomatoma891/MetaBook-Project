@@ -3,7 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 var passport = require("./config/passport");
-var hbs = require("hbs");
+// var hbs = require("hbs");
 var mysql = require("mysql");
 var sdkClient = require('./api_SDK/astro-api-nodejs-client-master/sdk/sdk');
 // Setting up port
