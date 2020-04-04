@@ -11,7 +11,7 @@
 * Find out birth stone,traits and lucky numbers 
 
 ## Visuals:
-
+![](/public/metabook.gif)
 
 
 ## Usage:
