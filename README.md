@@ -34,4 +34,4 @@ node server.js
 * making page dynamic based on passed data with handlebars 
 
 ## Link to deployed application: 
-https://dashboard.heroku.com/apps/cryptic-sea-06963/settings
+https://cryptic-sea-06963.herokuapp.com/
