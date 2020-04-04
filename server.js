@@ -248,9 +248,6 @@ app.get("/:sign", (req, res) => {
 //this will listen to and show all activities on our terminal to 
 //let us know what is happening in our app
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-}
 
 db.sequelize.sync().then(function () {
   app.listen(PORT, function () {
